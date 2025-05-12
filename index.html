@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fd608bcf57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="IMAGES/amitlogo.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header-text">
+      <h1>Hello,<br> I'm <span id="typing-text"></span></h1>
+      <br> <h2>ML Engineer from Chennai</h2>
+      <p>Welcome to my official Portfolio Website where I put all
+        my work related <br> to my skills, Projects and many more. I'm excited to share my expertise <br>with
+        you and explore how I can help you achieve your goals.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--------------------------------------------- About Section ----------------------------------------------------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="IMAGES/ABOUT1.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Hi, I'm Amit Kumar, a passionate Data Science and Machine Learning enthusiast with a strong background in statistics
+          and Computer Science. My expertise spans a wide range of Machine Learning algorithms including supervised and unsupervised 
+          learning, deep learning and natural language processing. I'm proficient in working with large datasets, building predictive models and 
+          deploying them in real-world applications. I'm a quick learner who believes in learning from my past mistakes and experiences.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Machine Learning</span><br>Deep learning</li>
+            <li><span>Power BI</span><br>NLP<br>SQL<br>Microsoft Excel</li>
+            <li><span>Python</span><br>Python Libraries such as: Pandas, Numpy, Matplotlib</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2024 - 2025</span><br>Building our ML Projects</li>
+            <li><span>2023 - 2024</span><br>Teamwork by collaborating with people<br>Transforming data into useful insights</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2021</span><br>Matric completed from BSEB Board</li>
+            <li><span>2023</span><br>Inter completed from BSEB Board</li>
+            <li><span>2027</span><br>Graduation BE-Computer Science Engineer, from Chennai</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------- Services Section ----------------------------------------------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Learnings</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Machine Learning</h2>
+        <p>Gained expertise in building predictive models using algorithms like Linear Regression, Decision Trees, and Support Vector Machines.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+       <i class="fa-solid fa-square-binary"></i>
+        <h2>Deep Learning</h2>
+        <p>Designing, building, and training deep neural networks utilizing frameworks like TensorFlow and Keras.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>SQL</h2>
+        <p>Learning SQL from scratch and understanding efficient ways to manage databases.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-python"></i>
+        <h2>Python</h2>
+        <p>Using Python to automate tasks, analyze data, and build applications.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-book"></i>
+        <h2>Python Libraries</h2>
+        <p>Hands-on experience with Pandas, Numpy, and Matplotlib for ML and data visualization.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-chart-column"></i>
+        <h2>Power BI</h2>
+        <p>Creating interactive dashboards and reports to help in business decision making.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-file-excel"></i>
+        <h2>Microsoft Excel</h2>
+        <p>Managing and analyzing large datasets using advanced Excel features.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ----------------------------------------------Portfolio Section --------------------------------------------------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="IMAGES/mywork1.jpg">
+        <div class="layer">
+          <h3>Learning Focus</h3>
+          <p>Building practical ML projects using libraries like NumPy, Pandas, scikit-learn, and Matplotlib.</p>
+          <a href="https://github.com/AmitAnant01/Matplotlib/blob/main/MLTBarplot.ipynb"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img class="two" src="IMAGES/mywork2.jpg">
+        <div class="layer">
+          <h3>Data Transformation</h3>
+          <p>Learning to clean and prepare datasets for machine learning models and analysis.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="IMAGES/mywork3.jpg">
+        <div class="layer">
+          <h3>Exploring Technologies</h3>
+          <p>Continuously exploring new technologies and collaborating with others.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+<!----------------------------------------------- Contact Section -------------------------------------------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1><br>
+        <p><i class="fa-solid fa-square-envelope"></i> amitsiwan3028@gmail.com</p><br>
+        <p><i class="fa-solid fa-phone"></i> 7209863930</p>
+        <div class="social-icons">
+          <a href="https://github.com/AmitAnant01"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anantamit320"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/amitkumar3202024?igsh=MWVucTcyMmlvYWNrdw=="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/AmitKum39320487?t=KNfNLljh7-g9_Fbmtua0vw&s=08"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <a href="IMAGES/amitcv.pdf" download class="btn btn2">Download CV  <i class="fa-solid fa-download"></i></a>
+      </div>
+
+      <div class="contact-left">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn3">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Amit <i class="fa-solid fa-heart"></i> 2025</p>
+  </div>
+</div>
+
+<!--------------------------------------------------- Scripts ------------------------------------------------------>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+  for (let tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (let tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxGCNMumpbPDRVXBfRqFGyWsgWS5CVbaWBrJvXCS0lEY8qUybfW-2WBUjzcyH7QEJ5gvg/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById('msg')
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = "Message sent successfully"
+      setTimeout(function () {
+        msg.innerHTML = ""
+      }, 5000)
+      form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+
+// Typing animation
+const text = "Amit Kumar";
+const typingText = document.getElementById('typing-text');
+let index = 0;
+let isDeleting = false;
+
+function type() {
+  let current = text.substring(0, index);
+  typingText.innerHTML = current + '<span class="cursor">|</span>';
+
+  if (!isDeleting) {
+    if (index < text.length) {
+      index++;
+      setTimeout(type, 250);
+    } else {
+      isDeleting = true;
+      setTimeout(type, 1000);
+    }
+  } else {
+    if (index > 0) {
+      index--;
+      setTimeout(type, 100);
+    } else {
+      isDeleting = false;
+      setTimeout(type, 500);
+    }
+  }
+}
+
+type();
+</script>
+
+<style>
+.cursor {
+  color: #ff4781;
+  font-weight: bold;
+}
+</style>
+
+</body>
+</html>
